@@ -552,7 +552,7 @@ gpu_image = (
     .add_local_python_source("config", "cleaning", "dedup", "train")
 )
 
-PRETRAIN_GPU = "A10G"  # cheapest GPU that comfortably fits a 125M model; ~$1.10/hr on Modal
+PRETRAIN_GPU = "A100"  # A100-40GB; faster than A10G for the remaining steps; ~$0.76/hr on Modal
 
 
 @app.function(image=gpu_image, volumes=VOLUMES, gpu=PRETRAIN_GPU, timeout=60 * 60 * 24,
