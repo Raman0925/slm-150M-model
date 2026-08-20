@@ -1,0 +1,5 @@
+Completely new project
+create a new 
+project on modal called slm125MLive
+dataset downloading and cleaning and tokenization needs to be done fro  scratch, 
+HF project project for this moadalneeds to be setupop from scratch
